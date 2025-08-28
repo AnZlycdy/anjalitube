@@ -1,19 +1,20 @@
 
 /* === Modern Dark UI Refresh (Inter + glass cards) === */
-:root{
-  --bg:#0b0b0f;
-  --bg-soft:#0e0e14;
-  --card:#14141a;
-  --card-border:#22232d;
-  --text:#f5f6fb;
-  --muted:#a7a7b3;
-  --brand:#6ee7ff;
-  --brand-2:#7c5cff;
-  --accent:#2a2a34;
-  --danger:#d9485f;
+:root {
+  --bg:#ffffff;
+  --bg-soft:#f9f9fb;
+  --card:#ffffff;
+  --card-border:#e0e0e0;
+  --text:#1a1a1a;
+  --muted:#666666;
+  --brand:#2563eb;     /* blue */
+  --brand-2:#9333ea;   /* purple */
+  --accent:#d1d5db;
+  --danger:#dc2626;
   --radius:14px;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --shadow: 0 6px 18px rgba(0,0,0,.08);
 }
+
 
 *{ box-sizing:border-box; }
 html,body,#__next{ height:100%; }
