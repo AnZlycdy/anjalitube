@@ -46,20 +46,26 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <UserContext.Provider value={{ user, isCreator, setIsCreator }}>
-        \1
-        <meta name="theme-color" content="#0b0b0f" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+<UserContext.Provider value={{ user, isCreator, setIsCreator }}>
+  <Head>
+    <title>AnjaliTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </Head>
 
-<title>AnjaliTube</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <link rel="icon" href="/favicon.ico" />
-</Head>
-      <NavBar />
-      <main className="container"><Component {...pageProps} /></main>
-      <footer>Qtube • UI refresh powered by Inter & glass cards</footer>
-    </UserContext.Provider>
+  <NavBar />
+  <main className="container">
+    <Component {...pageProps} />
+  </main>
+  <footer>AnjaliTube • UI refresh powered by Inter &amp; glass cards</footer>
+</UserContext.Provider>
+
   );
 }
